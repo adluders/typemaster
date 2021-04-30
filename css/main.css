@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  width: 77%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+}
+
+.btn__primary {
+  background-color: #f16718;
+  color: #fff;
+}
+
+.btn__primary:hover {
+  background-color: #ff9b62;
+}
+
+.btn__secondary {
+  background-color: #e8eff2;
+  color: #162542;
+}
+
+.btn__secondary:hover {
+  background-color: #162542;
+  color: #e8eff2;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  background-color: #f16718;
+  padding: 0.5rem;
+  max-width: 15%;
+  border-radius: 0.5rem;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    align-items: center;
+  }
+  .card h3 {
+    margin: 1rem 0;
+  }
+}
+
+.header-text {
+  color: #162542;
+  text-transform: uppercase;
+}
+
+.body-text {
+  color: #7b8bad;
+}
+
+header {
+  margin: 3rem auto 5rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container img {
+  width: 5%;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+}
+
+.hero .container .content {
+  padding: 1.5rem 0;
+}
+
+.hero .container .content h1 {
+  font: 56px "Barlow", sans-serif;
+  text-transform: uppercase;
+}
+
+.hero .container .content p {
+  margin: 0.5rem auto 2.7rem;
+}
+
+.hero .container .content__btns {
+  display: flex;
+  align-items: center;
+}
+
+.hero .container .content__btns p {
+  margin: auto;
+}
+
+.hero .container .graphic {
+  background-image: url("/assets/desktop/image-keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .container .graphic {
+    background-image: url("/assets/tablet/image-keyboard.jpg");
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero .container .graphic {
+    background-image: url("/assets/mobile/image-keyboard.jpg");
+  }
+}
+
+.keyboard {
+  margin: 2rem auto;
+}
+
+.keyboard .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.keyboard .container .graphics {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 0.5rem;
+}
+
+.keyboard .container .graphics .graphic-1,
+.keyboard .container .graphics .graphic-2 {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+
+.keyboard .container .graphics .graphic-1 {
+  position: relative;
+}
+
+.keyboard .container .graphics .graphic-1 .overlay {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 103, 24, 0.8);
+  position: absolute;
+}
+
+.keyboard .container .graphics .graphic-1 img {
+  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.keyboard .container .graphics .graphic-2 {
+  background-image: url("/assets/desktop/image-glass-and-keyboard.jpg");
+  flex-grow: 2;
+}
+
+.keyboard .container .content {
+  margin: 7rem;
+}
+
+.keyboard .container .content h2 {
+  font: 32px "Barlow", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 10rem auto 8rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .keyboard .container {
+    grid-template-columns: 1fr;
+  }
+  .keyboard .container .content {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .container img {
+    width: 10%;
+  }
+  .keyboard .container .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .keyboard .container .content h2 {
+    margin-bottom: 0;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
